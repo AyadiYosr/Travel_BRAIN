@@ -1,0 +1,102 @@
+.star-container {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 5px);
+    animation: fall 5s linear infinite;
+  }
+  
+  .star {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7px 13px 7px;
+    border-color: transparent transparent white transparent;
+    transform: rotate(35deg);
+    animation: twinkle 1s ease-in-out infinite;
+  }
+  
+  .star:nth-child(2) {
+    transform: rotate(70deg);
+  }
+  
+  .star:nth-child(3) {
+    transform: rotate(105deg);
+  }
+  
+  .star:nth-child(4) {
+    transform: rotate(140deg);
+  }
+  
+  .star:nth-child(5) {
+    transform: rotate(175deg);
+  }
+  
+  @keyframes fall {
+    0% {
+      top: -50px;
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    100% {
+      top: calc(100% + 50px);
+      opacity: 0;
+      transform: rotate(720deg);
+    }
+  }
+  
+  @keyframes twinkle {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+  .star:nth-child(2n) {
+    border-color: transparent transparent yellow transparent;
+  }
+  
+  .star:nth-child(3n) {
+    border-color: transparent transparent red transparent;
+  }
+  
+  .star:nth-child(4n) {
+    border-color: transparent transparent green transparent;
+  }
+  
+  .star:nth-child(5n) {
+    border-color: transparent transparent blue transparent;
+  }
+  
+  .star {
+    clip-path: polygon(
+      50% 0%,
+       61% 21%,
+       82% 28%,
+       68% 46%,
+       73% 67%,
+       50% 58%,
+       27% 67%,
+       32% 46%,
+       18% 28%,
+       39% 21%
+    );
+  }
+  
+  .falling-stars {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  input {
+    position: relative;
+    z-index: 2;
+  }
+  

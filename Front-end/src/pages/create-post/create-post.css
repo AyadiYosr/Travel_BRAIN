@@ -1,0 +1,146 @@
+
+/* Media Queries */
+@media (max-width: 820px) {
+    .create-post-form {
+        width: 100%;
+        
+    }
+}
+.row-header {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+   
+ 
+  }
+  
+  
+.create-post-form{
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 50px;
+    overflow-y: auto;
+}
+
+.input{
+    margin-left: 200px;
+  
+}
+.first {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5em;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.ql-editor {
+    min-height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    padding: 10px;
+    background-color: #9a9999;
+  }
+  .ql-toolbar {
+    border: none;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  .ql-toolbar button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .ql-toolbar button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .ql-toolbar button.active {
+    background-color: #eee;
+  }
+  select.selectinput {
+    width: 300px;
+  }
+  .bg-secondary {
+ margin-top: 5px;
+  }
+  
+  .gradient-button {
+    background-image: linear-gradient(to right, #4A2841 0%, #455060  51%, #2E2552  100%);
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    transition: background-position 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gradient-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transition: width 0.3s ease-out, height 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  
+  .gradient-button:hover {
+    background-position: right center;
+  }
+  
+  .gradient-button:hover::before {
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+  }
+  .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Choose file';
+    display: inline-block;
+    background: linear-gradient(to right, #4c80f1, #2661ff);
+    color: white;
+    padding: 8px 12px;
+    outline: none;
+    border-radius: 3px;
+    white-space: nowrap;
+
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .custom-file-input:hover::before {
+    background: linear-gradient(to right, #2661ff, #4c80f1);
+  }
+  .custom-file-input:active::before {
+    transform: translateY(1px);
+  }
+  .custom-file-label {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,114 @@
+.post-details {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.post-details-header {
+    display: flex;
+    align-items: center;
+  }
+  .post-details-title {
+    margin-right: 1rem;
+  }
+
+
+
+
+.post-details-user-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 20px;
+}
+
+.post-details-title {
+    text-align: center;
+    font-size: 40px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.post-details-user-image {
+    width: 50%;
+    height: 100%;
+    padding-left: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-details-user {
+    margin-top: 10px;
+}
+
+.post-details-user strong {
+    font-size: 21px;
+    color: var(--dark-color);
+}
+
+.post-details-user span {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--gray-color);
+}
+
+.post-details-description {
+    font-size: 21px;
+    line-height: 1.8;
+    color: var(--primary-color);
+}
+
+.post-details-icon-wrapper {
+    margin: 15px 0;
+    font-size: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--blue-color);
+}
+
+.post-details-icon-wrapper i {
+    cursor: pointer;
+}
+
+.post-details-info-write{
+    font-size: 17px;
+    color:var(--gray-color);
+}
+
+/* Media Query */
+@media (max-width: 820px) {
+    .post-details {
+        flex-direction: column;
+    }
+    
+    .post-details-user-info {
+        width: 100%;
+    }
+    
+    .post-details-image-wrapper {
+        width: 100%;
+        height: 400px;
+    }
+}
+.glass-container {
+    background-color: rgba(139, 193, 203, 0.408);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+  }
+ 
+
+  .post-details-image-wrapper {
+ height: 600px;
+  width: 600px;
+  overflow: hidden;
+  }
+.text-name{
+   color: aqua;
+}
+.likes{
+    color: #33215c;
+}

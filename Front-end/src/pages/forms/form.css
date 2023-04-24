@@ -1,0 +1,128 @@
+.form-container {
+    width: 100%;
+    height: calc(100vh - 130px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.form-title {
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.form {
+    width: 500px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-label {
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.form-input {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--gray-color);
+    font-size: 21px;
+    padding: 10px;
+}
+
+.form-btn {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--white-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.form-footer {
+    margin: 10px 0;
+    font-size: 17px;
+    color: var(--dark-color);
+}
+
+/* Media Queries */
+@media (max-width: 520px) {
+    .form {
+        width: 100%;
+    }
+}
+.form-btn {
+    background: linear-gradient(to right, #653660, #2D2450, #3C6E9F);
+    background-size: 200% auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-btn:hover {
+    animation: liquid 1s infinite;
+  }
+  
+  @keyframes liquid {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-title {
+    font-size: 3rem;
+    color: #33223E;
+  }
+  
+  .form-subtitle {
+    font-size: 1.5rem;
+    color: #d5d4dc;
+  }
+  
+  .form-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 10;
+    transform: translateX(-50%);
+    text-decoration: none;
+    padding: 1rem 0;
+  }
+  .form-footer a:hover {
+    color: blue;
+    
+  }
+  
